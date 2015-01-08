@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'json'
 
 require_relative 'lib/farmer'
 require_relative 'lib/farm'
