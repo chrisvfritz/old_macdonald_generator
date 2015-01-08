@@ -1,0 +1,17 @@
+<h1>Old MacDonald Song Generator</h1>
+
+<form>
+  <div class="form-group">
+    <label for="farmer_name">Farmer's Name</label>
+    <input name="farmer_name" value="<%= params[:farmer_name] %>" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="animals_count">Number of Animals</label>
+    <input name="animals_count" value="<%= params[:animals_count] %>" type="number" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+</form>
+
+<hr>
+
+<pre><%= @song %></pre>
