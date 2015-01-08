@@ -35,3 +35,7 @@ end
 class Owl < Animal
   def sound; 'woo'; end
 end
+
+class Rabbit < Animal
+  def sound; 'hop'; end
+end
