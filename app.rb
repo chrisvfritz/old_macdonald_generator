@@ -15,7 +15,7 @@ class NurseryRhymeApp < Sinatra::Base
 
   helpers do
 
-    NAMES = ['Sam', 'Frank', 'Alice']
+    NAMES = ['Sam', 'Frank', 'Alice', 'Sherman']
     ANIMALS = [Pig, Cow, Duck, Horse, Owl, Rabbit]
 
     def generate_song(farmer_name, animals_count)
