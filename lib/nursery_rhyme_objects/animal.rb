@@ -1,17 +1,19 @@
 class Animal
 
-  attr_reader :name
-
-  def initialize(name)
-    @name = name
-  end
-
   def to_s
     self.class.to_s.downcase
   end
 
   def sound
     'roar'
+  end
+
+  def long_sound
+    Array.new(2, sound).join ' '
+  end
+
+  def self.types
+    ObjectSpace.each_object(Class).select { |klass| klass < self }
   end
 
 end
